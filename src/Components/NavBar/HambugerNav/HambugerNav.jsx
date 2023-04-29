@@ -21,12 +21,10 @@ function HamburgerNavigator() {
       </div>
       <div className={`menu ${isOpen ? "open" : ""}`}>
         <ul>
+          <li>Carts</li>
           <li>Discounts</li>
           <li>Newletters</li>
-          <li>Ukarine</li>
-
-          <li>Discounts</li>
-          <li>Newletters</li>
+          <li>Career</li>
           <li>Ukarine</li>
           
         </ul>

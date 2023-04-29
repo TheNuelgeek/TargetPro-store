@@ -35,12 +35,16 @@
 .utilties{
     display: flex;
     gap: 10px;
+    width: 320px;
+    justify-content: flex-end;
 }
+
+
 
 .block-store-btn{
     cursor: pointer;
-    width: 40px;
-    height: 40px;
+    width: 43px;
+    height: 43px;
     border: none;
     border: 2px solid black;
     border-radius: 4px;

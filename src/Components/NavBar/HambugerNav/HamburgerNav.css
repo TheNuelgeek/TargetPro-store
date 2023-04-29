@@ -1,7 +1,7 @@
 .hamburger-container {
   position: relative;
   width: 40px;
-  height: 40px;
+  height: 39px;
   background-color: white;
   border: 2px solid black;
   border-radius: 4px;
@@ -52,7 +52,7 @@
 }
 
 .hamburger.open ~ .menu {
-  height: 350px;
+  height: 300px;
 }
 
 .menu ul {
