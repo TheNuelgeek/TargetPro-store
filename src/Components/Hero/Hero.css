@@ -1,0 +1,33 @@
+.hero-section{
+    position: relative;
+    margin-top: 0;
+    /* height: 480px;
+    width: 100%; */
+}
+
+.hero-info{
+    position: absolute;
+    top: 0;
+}
+
+.hero-img{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    height: 1400px;
+}
+
+.hero-img > img {
+    /* overflow: hidden; */
+    position: absolute;
+    width: 100vw; /* sets the width to 100% of the viewport width */
+    height: 50%; /* sets the height to 100% of the parent div height */
+    object-fit: cover; /* scales the image to cover the entire element */
+    /* top: 0; */
+    left: 0;
+}
+
+
+.hero-content{
+    /* margin-top: 0; */
+}
