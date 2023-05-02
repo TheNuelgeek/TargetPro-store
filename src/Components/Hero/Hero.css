@@ -12,18 +12,20 @@
     position: absolute;
     z-index: -1;
     top: 0;
-
-    height: 780px;
+    height: 85vh;
+    /* overflow: hidden; */
 }
 
-.hero-img > img {
+.hero-img img {
     position: absolute;
-    width: 100vw; /* sets the width to 100% of the viewport width */
-    height: 100%; /* sets the height to 100% of the parent div height */
-    object-fit: cover; /* scales the image to cover the entire element */
+    width: 100vw;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
     top: 0;
     left: 0;
 }
+  
 
 
 .hero-content{
@@ -60,12 +62,12 @@
 .hero-content-btn {
     display: flex;
     gap: 25px;
-    padding: 10px 20px;
+    padding: 6px 0px;
     position: relative;
-    z-index: 1;
-  }
+    z-index: 2;
+}
   
-  .hero-content-btn button {
+.hero-content-btn button {
     height: 40px;
     width: 150px;
     color: white;
@@ -76,34 +78,25 @@
     font-weight: 700;
     background-color: black;
     position: relative;
-    z-index: 2;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    /* box-shadow: 2px 2px 0 #000; */
-  }
+    /* z-index: 0; */
+}
   
-  .hero-content-btn button:hover {
-    transform: translate(2px, 2px);
-    /* box-shadow: 4px 4px 0 #000; */
-  }
-
-  .hero-content-btn button::before {
+  
+.hero-content-btn button::before {
     content: "";
     position: absolute;
-    top: 2px;
-    left: 2px;
-    right: -2px;
-    bottom: -2px;
-    z-index: -1;
+    top: 6px;
+    left: 6px;
+    right: -6px;
+    bottom: -6px;
+    z-index: -3;
     border: 2px solid #fff;
     border-radius: 4px;
-    opacity: 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  .hero-content-btn button ::before {
-    transform: translate(10px, 10px);
     opacity: 1;
-  }
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
   
-  
+.hero-content-btn button:hover::before {
+    transform: translate(3px, 3px);
+}
   

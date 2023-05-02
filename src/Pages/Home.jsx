@@ -1,3 +1,4 @@
+import Grid from "../Components/Grids/Grid";
 import HeroSection from "../Components/Hero/Hero";
 import NavBar from "../Components/NavBar/NavBar";
 
@@ -6,6 +7,7 @@ function Home(){
         <div>
             <NavBar/>
             <HeroSection />
+            <Grid />
         </div>
     )
 }
