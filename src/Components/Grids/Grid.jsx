@@ -4,7 +4,14 @@ function Grid(){
 
     return(
         <section className="grid-section">
+            <div className="grid-header">
+
             <h1>NEW COLLECTION</h1>
+            <div className="grid-btn">
+                <button className="grid-btn1"></button>
+                <button className="grid-btn2"></button>
+            </div>
+            </div>
             <div class="wrapper">
             {/* <!-- Row 1: One box per column --> */}
             <figure>
