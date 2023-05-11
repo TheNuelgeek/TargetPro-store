@@ -17,29 +17,41 @@ function Grid(){
             <figure>
             <div class="one"></div>
             <figcaption>
-                <h2>Abstract 1</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure>
             <div class="two"></div>
             <figcaption>
-                <h2>Abstract 2</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure>
             <div class="three"></div>
             <figcaption>
-                <h2>Abstract 3</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure>
             <div class="four"></div>
             <figcaption>
-                <h2>Abstract 4</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
         
@@ -48,15 +60,21 @@ function Grid(){
             <div class="three"></div>
         
             <figcaption>
-                <h2>Abstract 3</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure class="span2">
             <div class="one"></div>
             <figcaption>
-                <h2>Abstract 1</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
         
@@ -64,15 +82,21 @@ function Grid(){
             <figure class="span3">
             <div class="four"></div>
             <figcaption>
-                <h2>Abstract 4</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure class="span1-lg">
             <div class="two"></div>
             <figcaption>
-                <h2>Abstract 2</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
         
@@ -80,8 +104,11 @@ function Grid(){
             <figure class="span4">
             <div class="three"></div>
             <figcaption>
-                <h2>Abstract 3</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
         
@@ -89,22 +116,31 @@ function Grid(){
             <figure class="span2-md order2">
             <div class="four"></div>
             <figcaption>
-                <h2>Abstract 4</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure class="span4-md order1">
             <div class="two"></div>
             <figcaption>
-                <h2>Abstract 2</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             <figure class="span2-md order2">
             <div class="one"></div>
             <figcaption>
-                <h2>Abstract 1</h2>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <h2>Red Golf Tee</h2>
+                <div className="fig-footer">
+                <h4>30$</h4>
+                <p>(Men Original)</p>
+                </div>
             </figcaption>
             </figure>
             </div>
