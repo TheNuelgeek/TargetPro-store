@@ -3,6 +3,7 @@ import image1 from "./Assets/p1.png";
 import image2 from "./Assets/p2.png";
 import image3 from "./Assets/p3.png";
 import "./Hero.css";
+import LargeBtn from "../Buttons/LargeBtn";
 
 function HeroSection() {
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -34,8 +35,8 @@ function HeroSection() {
                 <p>Quiet Luxury, the real luxury</p>
             </div>
             <div className="hero-content-btn">
-                <button>SHOP MEN</button>
-                <button>SHOP WOMEN</button>
+                <LargeBtn name = 'SHOP MEN' />
+                <LargeBtn name = 'SHOP WOMEN' />
             </div>
             </div>
             <div className="hero-img">
