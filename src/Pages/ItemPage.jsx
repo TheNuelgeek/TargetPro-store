@@ -2,6 +2,7 @@ import NavBar from "../Components/NavBar/NavBar";
 import redTshirt from "../Components/Grids/Asset/wears/golf-red-tee.jpg"
 import LargeBtn from "../Components/Buttons/LargeBtn";
 import "./ItemPage.css"
+import CheckoutCard from "../Components/Checkout-Card/CheckoutCard";
 
 function ItemPage(prop){
     return(
@@ -29,7 +30,11 @@ function ItemPage(prop){
                         <h4>Description</h4>
                         <p>Experience the perfect fusion of fashion and performance with our Red Golf T-Shirt. Crafted from breathable fabric, it ensures optimal comfort throughout your golfing sessions. The bold red color exudes passion and vitality, setting you apart from the crowd. The tailored fit and minimalist design add a touch of sophistication to your outfit, making it a versatile choice for both casual rounds and competitive tournaments. Step onto the green with style and confidence in our Red Golf T-Shirt, and redefine your golfing aesthetic today.</p>
                     </div>
+                    <div className="item-btns">
+
                     <LargeBtn name = 'Add to Bag' />
+                    <CheckoutCard />
+                    </div>
                 </div>
             </div>
         </div>
