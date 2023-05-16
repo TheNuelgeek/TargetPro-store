@@ -51,7 +51,7 @@
   transition: height 0.3s;
 }
 
-.hamburger.open ~ .menu {
+.hamburger.open .menu {
   height: 300px;
 }
 

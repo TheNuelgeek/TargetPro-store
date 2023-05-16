@@ -1,31 +1,32 @@
 import { useState } from "react";
-import "./Checkout.css"
-import expandicon from "./assets/expand_less.svg"
+import "./Checkout.css";
+import expandicon from "./assets/expand_less.svg";
+import CheckItems from "./Checkbox";
 
-function CheckoutCard(){
-    const [isOpen, setIsOpen] = useState(true); // Add state to track menu visibility
+function CheckoutCard() {
+  const [isOpen, setIsOpen] = useState(false);
 
-    const handleToggle = () => {
-    setIsOpen(!isOpen); // Toggle menu visibility when the hamburger icon is clicked
-    };
+  const handleToggle = () => {
+    setIsOpen(!isOpen);
+  };
 
-    const handleClose = () => {
-        setIsOpen(false); // Close menu when it's already open and the hamburger icon is clicked again
-    }
-    return(
+  const handleClose = () => {
+    setIsOpen(false);
+  };
 
-        <div className="checkout-container">
-            <button className={`checkout ${isOpen ? "open" : ""}`} onClick={isOpen ? handleClose : handleToggle}> Checkout <img src={expandicon} alt="" /></button>
-            <div className={`menu ${isOpen ? "open" : ""}`}>
-                <ul>
-                    <input type="checkbox" name="Red Tee" id="" />
-                    <input type="checkbox" name="Blue Tee" id="" />
-                </ul>
-
-            </div>
-        </div>
-
-    )
+  return (
+    <div className="checkout-container">
+      <button
+        className={`checkout ${isOpen ? "open" : ""}`}
+        onClick={isOpen ? handleClose : handleToggle}
+      >
+        Checkout <img src={expandicon} alt="" />
+      </button>
+      <div className={`menu ${isOpen ? "open" : ""}`}>
+        <CheckItems />
+      </div>
+    </div>
+  );
 }
 
 export default CheckoutCard;

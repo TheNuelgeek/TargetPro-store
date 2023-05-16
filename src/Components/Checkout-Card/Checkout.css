@@ -1,22 +1,37 @@
-.checkout{
+.checkout-container{
+    position: absolute;
+    left: 180px;
+}
+
+.checkout-box-header{
+    display: flex;
+}
+
+.checkout-box-header img{
+    height: 20px;
+    width: 20px;
+}
+
+.checkout {
     height: 40px;
     width: 150px;
     color: black;
     border: none;
     border-radius: 4px;
-    font-family: 'Syne', sans-serif;
+    font-family: "Syne", sans-serif;
     cursor: pointer;
     font-weight: 700;
     background-color: rgb(255, 255, 255);
     position: relative;
     border: 2px solid #000000;
     display: flex;
-    justify-content:center;
-    align-items: center; 
-   
-} 
- 
-.checkout img{
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+    /* position: relative; */
+}
+  
+.checkout img {
     height: 20px;
     width: 20px;
 }
@@ -35,6 +50,23 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
   
-.checkout:hover::before {
+  .checkout:hover::before {
     transform: translate(3px, 3px);
+  }
+  
+  .menu {
+    position: absolute;
+    /* width: 200px; */
+    height: 0;
+    /* overflow: hidden; */
+    background-color: white;
+    transition: height 0.3s;
 }
+
+.menu.open {
+    top: -380%;
+    right: -30%;
+    height: 200px; /* set a height for the div */
+    overflow-y: scroll; /* add a vertical scrollbar */
+  }
+  
