@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./Checkout.css"
+import expandicon from "./assets/expand_less.svg"
 
 function CheckoutCard(){
     const [isOpen, setIsOpen] = useState(true); // Add state to track menu visibility
@@ -14,7 +15,7 @@ function CheckoutCard(){
     return(
 
         <div className="checkout-container">
-            <button className={`checkout ${isOpen ? "open" : ""}`} onClick={isOpen ? handleClose : handleToggle}> Checkout </button>
+            <button className={`checkout ${isOpen ? "open" : ""}`} onClick={isOpen ? handleClose : handleToggle}> Checkout <img src={expandicon} alt="" /></button>
             <div className={`menu ${isOpen ? "open" : ""}`}>
                 <ul>
                     <input type="checkbox" name="Red Tee" id="" />
