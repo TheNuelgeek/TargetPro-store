@@ -1,0 +1,35 @@
+
+.menu {
+    position: absolute;
+    /* width: 200px; */
+    height: 0;
+    /* overflow: hidden; */
+    background-color: white;
+    transition: height 0.3s;
+}
+
+.menu.open {
+    top: -380%;
+    right: -30%;
+    height: 200px;
+    overflow-y: scroll;
+    scrollbar-width: thin; /* width of the scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* color of the thumb and track */
+}
+  
+.menu.open::-webkit-scrollbar {
+    width: 5px; /* width of the scrollbar */
+}
+  
+.menu.open::-webkit-scrollbar-thumb {
+    background-color: #888; /* color of the thumb */
+}
+  
+.menu.open::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* color of the thumb on hover */
+}
+  
+.menu.open::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* color of the track */
+}
+  
