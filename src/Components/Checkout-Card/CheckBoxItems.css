@@ -1,17 +1,20 @@
+.checkout-box{
+    width: 200px;
+}
 
-  
-
-
-  
-/* .toppings-list {
-    list-style: none;
+.toppings-list {
     padding: 0;
-} */
-  
+    
+}
 
 .toppings-list li {
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.toppings-list li:hover{
+    background-color: #ddd;
 }
   
 .toppings-list-item {
@@ -29,6 +32,8 @@
   
 .total {
     margin-top: 1rem;
+    padding-left: 5px;
+    padding-right: 5px;
 }
 
 

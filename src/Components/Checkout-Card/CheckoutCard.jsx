@@ -22,7 +22,7 @@ function CheckoutCard() {
       >
         Checkout <img src={expandicon} alt="" />
       </button>
-      <div className={`menu ${isOpen ? "open" : ""}`}>
+      <div className={`checkout-menu ${isOpen ? "open" : ""}`}>
         <CheckBoxItems handleClose = {handleClose} />
       </div>
     </div>

@@ -45,13 +45,13 @@
   top: 120%;
   right: 0;
   width: 200px;
-  height: 0;
+  height:0;
   overflow: hidden;
   background-color: white;
   transition: height 0.3s;
 }
 
-.hamburger.open .menu {
+.hamburger.open ~ .menu {
   height: 300px;
 }
 

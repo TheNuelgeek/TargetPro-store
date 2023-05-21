@@ -1,14 +1,14 @@
 export const items = [
     {
-      name: "Capsicum",
-      price: 1.2
+      name: "Red Golf Tee",
+      price: 30
     },
     {
-      name: "Paneer",
-      price: 2.0
+      name: "Golf Shoe",
+      price: 110.0
     },
     {
-      name: "Red Paprika",
+      name: "Red K Heels",
       price: 2.5
     },
     {
