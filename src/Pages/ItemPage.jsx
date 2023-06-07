@@ -3,16 +3,29 @@ import redTshirt from "../Components/Grids/Asset/wears/golf-red-tee.jpg"
 import LargeBtn from "../Components/Buttons/LargeBtn";
 import "./ItemPage.css"
 import CheckoutCard from "../Components/Checkout-Card/CheckoutCard";
+import { selectedItem } from "../Components/Checkout-Card/utils/slectedItems";
+import { items } from "../Components/Checkout-Card/utils/item";
+import { useParams, Link } from "react-router-dom";
 
-function ItemPage(prop){
+
+function ItemPage(){
+    const {id} = useParams()
+
+    selectedItem.map(item => {
+        console.log("value", item)
+
+    })
+
+
     return(
         <div className="item-page">
             <NavBar />
+            {/* <Link to={`item-page/${items}`}></Link> */}
             <div className="item-page-item">
                 <img src={redTshirt} alt="" />
                 <div className="item-info">
                     <div className="rating">
-                        <p>Men's Original</p>
+                        <p>Men's Original, {id}</p>
                         <p><span>★★★☆</span>   3039</p>
                     </div>
                     <h1>Red Golf Tee</h1>
