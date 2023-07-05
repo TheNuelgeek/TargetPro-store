@@ -2,7 +2,7 @@
 import "./LargeBtn.css"
 function LargeBtn(prop){
     return(
-        <button className="large-Btn">{prop.name}</button>
+        <button className="large-Btn" onClick={prop.func}>{prop.name}</button>
     )
 }
 

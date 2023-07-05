@@ -10,6 +10,12 @@ import { useParams, Link } from "react-router-dom";
 
 function ItemPage(){
     const {id} = useParams()
+    const item = items[id]
+    
+    function addToBag(){
+        items.push(items[id])
+        console.log(items[id], items.length)
+    }
 
     selectedItem.map(item => {
         console.log("value", item)
@@ -22,13 +28,13 @@ function ItemPage(){
             <NavBar />
             {/* <Link to={`item-page/${items}`}></Link> */}
             <div className="item-page-item">
-                <img src={redTshirt} alt="" />
+                <img src={item.image} alt="" />
                 <div className="item-info">
                     <div className="rating">
                         <p>Men's Original, {id}</p>
                         <p><span>★★★☆</span>   3039</p>
                     </div>
-                    <h1>Red Golf Tee</h1>
+                    <h1>{item.name}</h1>
                     <h2>$30</h2>
                     <div>
                         <h4>Sizes</h4>
@@ -45,7 +51,11 @@ function ItemPage(){
                     </div>
                     <div className="item-btns">
 
-                    <LargeBtn name = 'Add to Bag' />
+                    <LargeBtn 
+                        name = 'Add to Bag' 
+                        func = {addToBag}
+                    />
+
                     <CheckoutCard />
                     </div>
                 </div>
